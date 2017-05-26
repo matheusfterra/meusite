@@ -1,0 +1,80 @@
+header
+	+clearfix
+	min-height: 500px
+	position: relative
+
+	&:after
+		content: ""
+		display: block
+		width: 100%
+		height: 45px
+		+gradient(90deg, $verde, $azul)
+		position: absolute
+		bottom: 0
+	background:
+		image: url('../images/Slide1.jpg')
+		position: top center
+		repeat: no-repeat
+		color: $preto
+		size: cover
+		attachment: fixed
+	
+	.logo
+		float: left
+		margin: 30px 0 0
+		img
+			width: 160px
+			height: 80px
+	.links
+		float: right
+		margin: 55px 0 0
+
+		nav,
+		.social
+			display: inline-block
+		nav
+			+breakpoint($tablet)
+				display: none
+			+breakpoint($celular)
+				display: none
+			ul
+				li
+					display: inline-block
+					margin: 0 25px 0 0
+					a
+						color: $branco
+						text-transform: uppercase
+		.social
+			margin: 0 25px 0 0
+			li
+				display: inline-block
+				margin: 0 10px 0 0
+
+				a
+					color: $branco
+					display: block
+					border: 1px solid $branco
+					padding: 4px
+					width: 25px
+					heigth: 25px
+					line-height: 17px
+					text-align: center
+					+border-radius(120px)
+		
+	h1
+		clear: both
+		margin: 230px auto  20px auto 
+		font-weight: $light
+		border: 3px solid $branco
+		padding: 20px
+		display: table
+		+breakpoint($celular)
+			+font-size(38px)
+	
+	h1,
+	p
+		color: $branco
+		text-align: center
+		text-transform: uppercase
+
+		
