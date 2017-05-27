@@ -1,0 +1,62 @@
+section.sobre
+	.itens
+		+flexbox
+		+align-items(center)
+		+justify-content(space-around)
+		margin: 50px 0
+		text-align: center
+
+		+make-sm-column(10)
+		+make-sm-column-offset(1)
+
+		+breakpoint($tablet)
+			display: block
+		
+		.imagem
+			+order(3)
+			+breakpoint($tablet)
+				margin: 0 0 30px
+
+		[class^="icone-"]
+			width: 90px
+			height: 90px
+			background-color: $azul-claro
+			+border-radius(120px)
+			text-align: center
+			line-height: 85px
+			color: $branco
+			+font-size(55px)
+			
+			+breakpoint($tablet)
+				display: inline-block
+				width: 75px
+				height: 75px
+				line-height: 75px
+				+font-size(50px)
+				margin: 0 3px
+			
+			+breakpoint($celular)
+				display: inline-block
+				width: 65px
+				height: 65px
+				line-height: 65px
+				+font-size(30px)
+				margin: 0 3px
+	
+			&.icone-graduacao
+				+order(1)
+			&.icone-codigo
+				+order(2)
+			&.icone-mouse
+				+order(4)
+			&.icone-windows
+				+order(5)
+	.textos
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+		text-align: center
+		p
+			+font-size(35px)
+		.botao
+			display: table
+			margin: 30px auto
