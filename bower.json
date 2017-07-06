@@ -21,6 +21,7 @@
     "breakpoint-sass": "^2.7.1"
   },
   "devDependencies": {
-    "sass-flex-mixin": "^1.0.3"
+    "sass-flex-mixin": "^1.0.3",
+    "imagehover.css": "*"
   }
 }
