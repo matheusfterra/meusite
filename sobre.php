@@ -6,24 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/geral.css">
 <link rel="stylesheet" href="css/plugins.css">
-<link rel="stylesheet" href="css/home.css">	
+<link rel="stylesheet" href="css/sobre.css">	
 <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">	
 
 </head>
 
 <body>
-				<nav class="menu-responsivo">
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
+<?php include "includes/menu-responsivo.php"?>
 <div class="layout">
 	<header>
 		<div class="container">
-			<div class="logo wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="2s">
+			<div class="logo">
 				<a href="index.html">
 					<img src="images/logo-topo.png" alt="Logo Topo">
 				</a>
@@ -37,55 +30,43 @@
 						<li><a href="contato.html">Contato</a></li>
 					</ul>
 				</nav>
-					<a class="toggle" href="javascript:;">
-					<span></span>
-					<span></span>
-					<span></span>
-					</a>
 					<ul class="social">
 						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fa fa-git"></i></a></li>
 					</ul>
 			</div><!--links-->
 
-				<h1><strong>Matheus</strong> F. <strong>Terra</strong></h1>
-				<p>Code // Design // Reboot</p>
+				<h1><strong>Quem</strong> sou <strong>Eu</strong></h1>
+				<!--<p>Code // Design // Reboot</p>-->
 		</div><!--container-->
 	</header>
 
 	<main>
 	<section class="sobre">
 			<div class="container">
-				<div class="itens">
-					<div class="imagem">
-						<img src="images/imagem-bola.png" alt="Foto TAG">
-					</div>
-
-					<div class="icone-graduacao">
-						<i class="fa fa-graduation-cap"></i>
-					</div>
-
-					<div class="icone-codigo">
-						<i class="fa fa-code"></i>
-					</div>
-
-					<div class="icone-mouse">
-						<i class="fa fa-mouse-pointer"></i>
-					</div>
-
-					<div class="icone-windows">
-						<i class="fa fa-windows"></i>
-					</div>
-
-				</div><!--itens-->
 				<div class="textos">
 					<p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div><!--textos-->	
 
-					<a href="#" class="botao medio"><i class="fa fa-eye"></i>  Continue Lendo!</a>
-				</div><!--textos-->
+					<ul class="habilidades">
+						<li class="habilidade-8">
+							<h2><i class="fa fa-html5"></i> <strong>HTML</strong> // 80%<div class="barra"><span></span></div></h2>
+						</li>
+						<li class="habilidade-5">
+							<h2><i class="fa fa-css3"></i> <strong>CSS3</strong> // 50%<div class="barra"><span></span></div></h2>
+						</li>
+						<li class="habilidade-7">
+							<h2><i class="fa fa-wordpress"></i> <strong>Wordpress</strong> // 70%<div class="barra"><span></span></div></h2>
+						</li>
+						<li class="habilidade-3">
+							<h2><i class="fa fa-git"></i> <strong>Git</strong> // 30%<div class="barra"><span></span></div></h2>
+						</li>
+
+					</ul>
+
+				<a href="#" class="botao medio"><i class="fa fa-picture-o"></i>  Acessar Portfolio</a>
 			</div><!--container-->
 		</section>
-
 	</main>
 
 	<footer>
@@ -99,21 +80,6 @@
 
 	</footer>
 </div>
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/wow/dist/wow.min.js"></script>
-
-<script>
-	$(function(){
-		$('.toggle').click(function(){
-			$('.layout').toggleClass('ativo')
-			$('.menu-responsivo').toggleClass('ativo')
-			$(this).toggleClass('ativo');
-		});
-		new WOW().init();
-	});
-	</script>
-
-
+<?php include "includes/scripts.php"?>
 </body>
 </html>

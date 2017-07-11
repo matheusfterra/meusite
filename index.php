@@ -12,14 +12,7 @@
 </head>
 
 <body>
-				<nav class="menu-responsivo">
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
+<?php include "includes/menu-responsivo.php"?>
 <div class="layout">
 	<header>
 		<div class="container">
@@ -99,21 +92,7 @@
 
 	</footer>
 </div>
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/wow/dist/wow.min.js"></script>
-
-<script>
-	$(function(){
-		$('.toggle').click(function(){
-			$('.layout').toggleClass('ativo')
-			$('.menu-responsivo').toggleClass('ativo')
-			$(this).toggleClass('ativo');
-		});
-		new WOW().init();
-	});
-	</script>
-
+<?php include "includes/scripts.php"?>
 
 </body>
 </html>
