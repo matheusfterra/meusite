@@ -12,14 +12,7 @@
 </head>
 
 <body>
-				<nav class="menu-responsivo">
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				</nav>
+<?php include "includes/menu-responsivo.php"?>
 <div class="layout">
 	<header>
 		<div class="container">
@@ -31,10 +24,10 @@
 			<div class="links">
 				<nav>
 					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portfolio.html">Portfolio</a></li>
-						<li><a href="contato.html">Contato</a></li>
+						<li><a href="index.php">Início</a></li>
+						<li><a href="sobre.php">Sobre</a></li>
+						<li><a href="portfolio.php">Portfolio</a></li>
+						<li><a href="contato.php">Contato</a></li>
 					</ul>
 				</nav>
 					<a class="toggle" href="javascript:;">
@@ -99,21 +92,7 @@
 
 	</footer>
 </div>
-<?php include "includes/scripts.php">
-<!--<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/wow/dist/wow.min.js"></script>
-
-<script>
-	$(function(){
-		$('.toggle').click(function(){
-			$('.layout').toggleClass('ativo')
-			$('.menu-responsivo').toggleClass('ativo')
-			$(this).toggleClass('ativo');
-		});
-		new WOW().init();
-	});
-	</script>
--->
+<?php include "includes/scripts.php"?>
 
 </body>
 </html>
