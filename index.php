@@ -16,12 +16,12 @@
 <div class="layout">
 	<header>
 		<div class="container">
-			<div class="logo wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="2s">
+			<div class="logo wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="1s">
 				<a href="index.html">
 					<img src="images/logo-topo.png" alt="Logo Topo">
 				</a>
 			</div>
-			<div class="links">
+			<div class="links wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1.5s">
 				<nav>
 					<ul>
 						<li><a href="index.php">Início</a></li>
@@ -41,7 +41,7 @@
 					</ul>
 			</div><!--links-->
 
-				<h1><strong>Matheus</strong> F. <strong>Terra</strong></h1>
+				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><strong>Matheus</strong> F. <strong>Terra</strong></h1>
 				<p>Code // Design // Reboot</p>
 		</div><!--container-->
 	</header>
@@ -50,7 +50,7 @@
 	<section class="sobre">
 			<div class="container">
 				<div class="itens">
-					<div class="imagem">
+					<div class="imagem wow rotateInDownLeft" data-wow-duration="0.5s" data-wow-delay="2.5s">
 						<img src="images/imagem-bola.png" alt="Foto TAG">
 					</div>
 

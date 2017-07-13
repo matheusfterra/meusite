@@ -41,7 +41,7 @@
 					</ul>
 			</div><!--links-->
 
-				<h1>Meus <strong>Trabalhos</strong></h1>
+				<h1 class="wow wobble" data-wow-duration="0.5s" data-wow-delay="2s">Meus <strong>Trabalhos</strong></h1>
 				<!--<p>Code // Design // Reboot</p>-->
 		</div><!--container-->
 	</header>

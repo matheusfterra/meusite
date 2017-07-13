@@ -41,7 +41,7 @@
 					</ul>
 			</div><!--links-->
 
-				<h1>Fale <strong>Comigo!</strong></h1>
+				<h1 class="wow hinge" data-wow-duration="2s" data-wow-delay="4s">Fale <strong>Comigo!</strong></h1>
 				<!--<p>Code // Design // Reboot</p>-->
 		</div><!--container-->
 	</header>
@@ -49,7 +49,7 @@
 	<main>
 		<section class="contato">
 			<div class="container">
-				<form>
+				<form class="wow flipInY" data-wow-duration="0.5s" data-wow-delay="2s">
 					<div class="cols">
 						<div class="col">
 							<div class="form-group">
