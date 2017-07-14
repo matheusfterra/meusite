@@ -2,7 +2,7 @@
 			<div class="container">
 				<div class="itens">
 					<div class="imagem wow rotateInDownLeft" data-wow-duration="0.5s" data-wow-delay="2.5s">
-						<img src="images/imagem-bola.png" alt="Foto TAG">
+						<img src="<?php bloginfo('template_url');?>/images/imagem-bola.png" alt="Foto TAG">
 					</div>
 
 					<div class="icone-graduacao">

@@ -3,12 +3,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Matheus Terra</title>
+<title><?php bloginfo('name'); echo " | "; bloginfo('description');?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/geral.css">
-<link rel="stylesheet" href="css/plugins.css">
-<link rel="stylesheet" href="css/<?php echo $style ?>.css">	
-<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style ?>.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">	
 
 </head>
 
@@ -18,8 +18,8 @@
 	<header>
 		<div class="container">
 			<div class="logo wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="1s">
-				<a href="index.html">
-					<img src="images/logo-topo.png" alt="Logo Topo">
+				<a href="<?php bloginfo('url');?>">
+					<img src="<?php bloginfo('template_url');?>/images/logo-topo.png" alt="Logo Topo">
 				</a>
 			</div>
 			<div class="links wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1.5s">
@@ -51,10 +51,10 @@
 <meta charset="utf-8">
 <title>Matheus Terra</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/geral.css">
-<link rel="stylesheet" href="css/plugins.css">
-<link rel="stylesheet" href="css/<?php echo $style ?>.css">	
-<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style ?>.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">	
 
 </head>
 
@@ -64,8 +64,8 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				<a href="index.html">
-					<img src="images/logo-topo.png" alt="Logo Topo">
+				<a href="<?php bloginfo('url');?>">
+					<img src="<?php bloginfo('template_url');?>/images/logo-topo.png" alt="Logo Topo">
 				</a>
 			</div>
 			<div class="links">

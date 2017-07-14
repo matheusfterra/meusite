@@ -4,15 +4,15 @@
 	<footer>
 		<div class="logo-rodape">
 			<a href="index.html">
-				<img src="images/logo-rodape.svg" alt="Logo Rodapé">
+				<img src="<?php bloginfo('template_url');?>/images/logo-rodape.svg" alt="Logo Rodapé">
 			</a>
-			<p>2017 Todos os Direitos Reservados</p>
+			<p><?php echo date('Y');?> Todos os Direitos Reservados</p>
 
 		</div>
 
 	</footer>
 </div>
-<?php include "includes/scripts.php"?>
+<?php include "includes/organisms/scripts.php"?>
 
 </body>
 </html>
