@@ -1,102 +1,24 @@
 <section class="portfolio">
 			<div class="container">
+				<?php query_posts('post_type=post');?>
 				<ul>
+					<?php while(have_posts()): the_post();?>
 					<li>
 						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
+							<img src="<?php the_post_thumbnail_url('portfolio-thumb');?>" alt="thumb">
 							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
+							<!-- Gera Link para single
+							<?php //the_permalink();?> -->
+								<a href="<?php the_post_thumbnail_url();?>" data-lightbox="roadtrip" data-title="<?php the_content();?>">
+									<h3><?php the_title();?></h3>
+									<p><?php the_content();?></p>
 								</a>
 								<div class="overlay"></div>
 							</figcaption>
 						</figure>
 					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-hinge-down">
-							<img src="http://placehold.it/430x220" alt="thumb">
-							<figcaption>
-								<a href="#">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay"></div>
-							</figcaption>
-						</figure>
-					</li>
+				<?php endwhile;?>
 				</ul>
+				<?php wp_reset_query();?>
 			</div>
-		</section>
+</section>

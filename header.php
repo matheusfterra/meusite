@@ -9,12 +9,24 @@
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style ?>.css">	
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">	
-
+	
 </head>
 
 <body <?php body_class();?>>
 <?php include "includes/organisms/menu-responsivo.php"?>
 <div class="layout">
+<style>
+<?php if(get_the_post_thumbnail()){ ?>
+      header{
+      	 background-image: url('<?php the_post_thumbnail_url();?>');
+      }
+  <?php }else{ ?>
+  		header{
+  			background-image: url('<?php bloginfo('template_url');?>/images/Slide1.jpg');
+  		}  
+  <?php } ?>
+</style>
+
 	<header>
 		<div class="container">
 			<div class="logo wow slideInLeft" data-wow-duration="0.5s" data-wow-delay="1s">
@@ -35,7 +47,7 @@
 					</ul>
 			</div><!--links-->
 
-				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><?php echo $chamada;?></h1>
+				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><?php the_title();?></h1>
 				<?php if($style == "home"){?>
 				<p>Code // Design // Reboot</p>
 				<?php }else{} ?>
@@ -49,18 +61,29 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Matheus Terra</title>
+<title><?php bloginfo('name'); echo " | "; bloginfo('description');?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style ?>.css">	
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">	
-
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/lightbox2/dist/css/lightbox.min.css">
 </head>
 
 <body>
 <?php include "includes/organisms/menu-responsivo.php"?>
 <div class="layout">
+<style>
+<?php if(get_the_post_thumbnail()){ ?>
+      header{
+      	 background-image: url('<?php the_post_thumbnail_url();?>');
+      }
+  <?php }else{ ?>
+  		header{
+  			background-image: url('<?php bloginfo('template_url');?>/images/Slide1.jpg');
+  		}  
+  <?php } ?>
+</style>
 	<header>
 		<div class="container">
 			<div class="logo">
@@ -81,7 +104,7 @@
 					</ul>
 			</div><!--links-->
 
-				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><?php echo $chamada;?></h1>
+				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><?php the_title();?></h1>
 				
 		</div><!--container-->
 	</header>
