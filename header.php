@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body <?php body_class();?>>
 <?php include "includes/organisms/menu-responsivo.php"?>
 <div class="layout">
 	<header>
