@@ -1,4 +1,8 @@
 <?php 
+/*
+	template name: Sobre
+	*/
+ global $style;
 $style = "sobre";
 $chamada = "<strong>Quem</strong> sou <strong>Eu</strong>";
 include "header.php";

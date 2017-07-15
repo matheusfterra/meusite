@@ -1,7 +1,8 @@
 <?php 
 /*
-	template name: Início
+	template name: Inicio
 	*/
+global $style;
 $style = "home";
 $chamada = "<strong>Matheus</strong> F. <strong>Terra</strong>";
 include "header.php";

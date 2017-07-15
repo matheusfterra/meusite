@@ -1,15 +1,17 @@
-<?php if($style == 'home'){ ?>
+<?php if(is_front_page()){?>
 <!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title><?php bloginfo('name'); echo " | "; bloginfo('description');?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="<?php bloginfo('template_url');?>/images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
-<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style ?>.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php global $style; echo $style; ?>.css">	
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">	
-	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick-theme.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick.css">
 </head>
 
 <body <?php body_class();?>>
@@ -47,11 +49,27 @@
 					</ul>
 			</div><!--links-->
 
-				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><?php the_title();?></h1>
-				<?php if($style == "home"){?>
-				<p>Code // Design // Reboot</p>
-				<?php }else{} ?>
+		  <div class="slide">
+			<?php 
+				query_posts('post_type=slide');
+				while(have_posts()) : the_post();
+			?>
+				<div class="item">
+					<h1><?php the_title();?></h1>
+					<?php the_content();?>
+				</div>
+			<?php 
+				endwhile;
+				wp_reset_query();
+			?>
+		</div>
+
+
+
+
+
 		</div><!--container-->
+		<?php wp_head();?>
 	</header>
 
 	<main>
@@ -63,11 +81,14 @@
 <meta charset="utf-8">
 <title><?php bloginfo('name'); echo " | "; bloginfo('description');?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="<?php bloginfo('template_url');?>/images/favicon.ico" type="image/x-icon" />
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/geral.css">
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/plugins.css">
-<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php echo $style ?>.css">	
+<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/<?php global $style; echo $style; ?>.css">	
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/wow/css/libs/animate.css">	
+<?php if(is_page('portfolio')){?>
 <link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/lightbox2/dist/css/lightbox.min.css">
+<?php }else{};?>
 </head>
 
 <body>
@@ -107,6 +128,7 @@
 				<h1 class="wow swing" data-wow-duration="0.5s" data-wow-delay="2s"><?php the_title();?></h1>
 				
 		</div><!--container-->
+		<?php wp_head();?>
 	</header>
 
 	<main>

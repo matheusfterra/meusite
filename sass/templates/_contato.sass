@@ -5,6 +5,9 @@ header
 	background:
 		image: url('../images/Slide2.jpg')
 .contato
+	p
+		display: block
+		margin: 0 0 20px
 	form
 		+clearfix
 		+make-sm-column(8)
@@ -25,10 +28,14 @@ header
 				border-color: $azul
 			&:focus
 				border-color: $verde
-		button
+		input[type="submit"]
 			background-color: transparent
 			display: table
+			width: 200px
+			height: 37px
 			margin: 0 auto
+			&:hover, &:focus
+				border-color: $verde
 		.bg-success,
 		.bg-danger
 			padding: 7px

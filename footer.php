@@ -13,6 +13,6 @@
 	</footer>
 </div>
 <?php include "includes/organisms/scripts.php"?>
-
+<?php wp_footer();?>
 </body>
 </html>
