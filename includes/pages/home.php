@@ -31,4 +31,4 @@
 					<a href="#" class="botao medio"><i class="fa fa-eye"></i>  Continue Lendo!</a>
 				</div><!--textos-->
 			</div><!--container-->
-		</section>
+</section>

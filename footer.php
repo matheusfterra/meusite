@@ -11,7 +11,7 @@
 		</div>
 
 	</footer>
-</div>
+</div><!--layout-->
 <?php include "includes/organisms/scripts.php"?>
 <?php wp_footer();?>
 </body>

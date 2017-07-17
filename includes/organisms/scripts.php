@@ -19,8 +19,8 @@
 		<?php if(is_front_page()){?>
 			$('.slide').slick({
 				infinite: true,
-				dots: true,
 				slidesToShow: 1,
+				dots: true,
 				autoplay: true,
 				autoplaySpeed:2000
 			});
