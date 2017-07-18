@@ -49,6 +49,7 @@
 	function tamanhos_thumbs() {
 		add_theme_support('post-thumbnails');
 		add_image_size('portfolio-thumb', 265, 150, true);
+		add_image_size('portfolio-img', 665, 550, true);
 	}
 	add_action('after_setup_theme', 'tamanhos_thumbs');
 ?>

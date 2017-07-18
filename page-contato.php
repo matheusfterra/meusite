@@ -5,7 +5,7 @@
  global $style;
 $style = "contato";
 $chamada = "Fale <strong>Comigo!</strong>";
-include "header.php";
+get_header(); 
 include "includes/pages/contato.php" ;
-include "footer.php";
+get_footer();
 ?>

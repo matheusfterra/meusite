@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick-theme.css">	
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/slick-carousel/slick/slick.css">
 		<?php }else{}?>
-		<?php if(is_page('portfolio')){?>
+		<?php if(is_page('portfolio') || is_singular()){?>
 		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/bower_components/lightbox2/dist/css/lightbox.min.css">
 		<?php }else{}?>
 		<?php wp_head();?>
@@ -24,7 +24,7 @@
 <?php include "includes/organisms/menu-responsivo.php";?>
 <div class="layout">
 	<style>
-		<?php if(get_the_post_thumbnail()){ ?>
+		<?php if(get_the_post_thumbnail() && !is_singular()){ ?>
 		     	 header{
 		      	 background-image: url('<?php the_post_thumbnail_url();?>');
 		      }

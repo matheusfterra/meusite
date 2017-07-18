@@ -5,7 +5,7 @@
  global $style;
 $style = "sobre";
 $chamada = "<strong>Quem</strong> sou <strong>Eu</strong>";
-include "header.php";
+get_header(); 
 include "includes/pages/sobre.php" ;
-include "footer.php";
+get_footer();
 ?>

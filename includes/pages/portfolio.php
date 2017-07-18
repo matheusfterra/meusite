@@ -9,7 +9,7 @@
 							<figcaption>
 							<!-- Gera Link para single
 							<?php //the_permalink();?> -->
-								<a href="<?php the_post_thumbnail_url();?>" data-lightbox="roadtrip" data-title="<?php the_content();?>">
+								<a href="<?php  the_permalink();?>">
 									<h3><?php the_title();?></h3>
 									<p><?php the_content();?></p>
 								</a>
